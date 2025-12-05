@@ -1,9 +1,7 @@
 body {
-    
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(43, 120, 137, 0.383);
 
 }
-  
 
 #everything {
     display: flex;
@@ -20,24 +18,214 @@ body {
 
 h1{
     font-size: 70px;
+    color:rgb(255, 255, 255);
 }
 
 input{
-    height: 35px;
-    width: 73px;
-    font-size: large;
+    height: 40px;
+    width: 200px;
+    font-size: 30px;
     text-align: center;
+    font-family:'Times New Roman', Times, serif;
 
 }
 
 button{
     padding: 10px 20px;
-    background-color: black;
+    background-color: rgb(52, 120, 149);
     color:aliceblue;
     border: none;
     border-radius: 4px;
 }
 button:hover{
     cursor: pointer;
-    background-color: gray;
+    background-color: rgb(29, 185, 212);
 }
+
+/* number background animation */
+.numbers{
+    position: fixed; /* keeps them behind everything */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* prevents them from blocking clicks */
+    z-index: -1; /* positioned at back of screen */
+
+}
+
+.numbers img{
+    opacity: .25;
+    position: absolute;
+    width: 40px;
+    animation: fall 6s linear infinite;
+}
+
+/* defines downward movement */
+@keyframes fall {
+    0% {transform: translateY(-150px);}
+    100% {transform: translateY(110vh);}
+  }
+
+
+
+/* COLUMN 1 */
+#n1_1, #n1_2, #n1_3, #n1_4, #n1_5, #n1_6 { left: 0%; }
+#n1_1 { animation-delay: 0s; }
+#n1_2 { animation-delay: 1s; }
+#n1_3 { animation-delay: 2s; }
+#n1_4 { animation-delay: 3s; }
+#n1_5 { animation-delay: 4s; }
+#n1_6 { animation-delay: 5s; }
+
+/* COLUMN 2 */
+#n2_1, #n2_2, #n2_3, #n2_4, #n2_5, #n2_6 { left: 5.55%; }
+#n2_1 { animation-delay: 0.5s; }
+#n2_2 { animation-delay: 1.5s; }
+#n2_3 { animation-delay: 2.5s; }
+#n2_4 { animation-delay: 3.5s; }
+#n2_5 { animation-delay: 4.5s; }
+#n2_6 { animation-delay: 5.5s; }
+
+/* COLUMN 3 */
+#n3_1, #n3_2, #n3_3, #n3_4, #n3_5, #n3_6 { left: 11.1%; }
+#n3_1 { animation-delay: 1s; }
+#n3_2 { animation-delay: 2s; }
+#n3_3 { animation-delay: 3s; }
+#n3_4 { animation-delay: 4s; }
+#n3_5 { animation-delay: 5s; }
+#n3_6 { animation-delay: 6s; }
+
+/* COLUMN 4 */
+#n4_1, #n4_2, #n4_3, #n4_4, #n4_5, #n4_6 { left: 16.65%; }
+#n4_1 { animation-delay: 1.5s; }
+#n4_2 { animation-delay: 2.5s; }
+#n4_3 { animation-delay: 3.5s; }
+#n4_4 { animation-delay: 4.5s; }
+#n4_5 { animation-delay: 5.5s; }
+#n4_6 { animation-delay: 6.5s; }
+
+/* COLUMN 5 */
+#n5_1, #n5_2, #n5_3, #n5_4, #n5_5, #n5_6 { left: 22.2%; }
+#n5_1 { animation-delay: 2s; }
+#n5_2 { animation-delay: 3s; }
+#n5_3 { animation-delay: 4s; }
+#n5_4 { animation-delay: 5s; }
+#n5_5 { animation-delay: 6s; }
+#n5_6 { animation-delay: 7s; }
+
+/* COLUMN 6 */
+#n6_1, #n6_2, #n6_3, #n6_4, #n6_5, #n6_6 { left: 27.75%; }
+#n6_1 { animation-delay: 2.5s; }
+#n6_2 { animation-delay: 3.5s; }
+#n6_3 { animation-delay: 4.5s; }
+#n6_4 { animation-delay: 5.5s; }
+#n6_5 { animation-delay: 6.5s; }
+#n6_6 { animation-delay: 7.5s; }
+
+/* COLUMN 7 */
+#n7_1, #n7_2, #n7_3, #n7_4, #n7_5, #n7_6 { left: 33.3%; }
+#n7_1 { animation-delay: 3s; }
+#n7_2 { animation-delay: 4s; }
+#n7_3 { animation-delay: 5s; }
+#n7_4 { animation-delay: 6s; }
+#n7_5 { animation-delay: 7s; }
+#n7_6 { animation-delay: 8s; }
+
+/* COLUMN 8 */
+#n8_1, #n8_2, #n8_3, #n8_4, #n8_5, #n8_6 { left: 38.85%; }
+#n8_1 { animation-delay: 3.5s; }
+#n8_2 { animation-delay: 4.5s; }
+#n8_3 { animation-delay: 5.5s; }
+#n8_4 { animation-delay: 6.5s; }
+#n8_5 { animation-delay: 7.5s; }
+#n8_6 { animation-delay: 8.5s; }
+
+/* COLUMN 9 */
+#n9_1, #n9_2, #n9_3, #n9_4, #n9_5, #n9_6 { left: 44.4%; }
+#n9_1 { animation-delay: 4s; }
+#n9_2 { animation-delay: 5s; }
+#n9_3 { animation-delay: 6s; }
+#n9_4 { animation-delay: 7s; }
+#n9_5 { animation-delay: 8s; }
+#n9_6 { animation-delay: 9s; }
+
+#n10_1, #n10_2, #n10_3, #n10_4, #n10_5, #n10_6 { left: 50%; }
+#n10_1 { animation-delay: 0s; }
+#n10_2 { animation-delay: 1s; }
+#n10_3 { animation-delay: 2s; }
+#n10_4 { animation-delay: 3s; }
+#n10_5 { animation-delay: 4s; }
+#n10_6 { animation-delay: 5s; }
+
+/* COLUMN 11 */
+#n11_1, #n11_2, #n11_3, #n11_4, #n11_5, #n11_6 { left: 55.55%; }
+#n11_1 { animation-delay: 0.5s; }
+#n11_2 { animation-delay: 1.5s; }
+#n11_3 { animation-delay: 2.5s; }
+#n11_4 { animation-delay: 3.5s; }
+#n11_5 { animation-delay: 4.5s; }
+#n11_6 { animation-delay: 5.5s; }
+
+/* COLUMN 12 */
+#n12_1, #n12_2, #n12_3, #n12_4, #n12_5, #n12_6 { left: 61.1%; }
+#n12_1 { animation-delay: 1s; }
+#n12_2 { animation-delay: 2s; }
+#n12_3 { animation-delay: 3s; }
+#n12_4 { animation-delay: 4s; }
+#n12_5 { animation-delay: 5s; }
+#n12_6 { animation-delay: 6s; }
+
+/* COLUMN 13 */
+#n13_1, #n13_2, #n13_3, #n13_4, #n13_5, #n13_6 { left: 66.65%; }
+#n13_1 { animation-delay: 1.5s; }
+#n13_2 { animation-delay: 2.5s; }
+#n13_3 { animation-delay: 3.5s; }
+#n13_4 { animation-delay: 4.5s; }
+#n13_5 { animation-delay: 5.5s; }
+#n13_6 { animation-delay: 6.5s; }
+
+/* COLUMN 14 */
+#n14_1, #n14_2, #n14_3, #n14_4, #n14_5, #n14_6 { left: 72.2%; }
+#n14_1 { animation-delay: 2s; }
+#n14_2 { animation-delay: 3s; }
+#n14_3 { animation-delay: 4s; }
+#n14_4 { animation-delay: 5s; }
+#n14_5 { animation-delay: 6s; }
+#n14_6 { animation-delay: 7s; }
+
+/* COLUMN 15 */
+#n15_1, #n15_2, #n15_3, #n15_4, #n15_5, #n15_6 { left: 77.75%; }
+#n15_1 { animation-delay: 2.5s; }
+#n15_2 { animation-delay: 3.5s; }
+#n15_3 { animation-delay: 4.5s; }
+#n15_4 { animation-delay: 5.5s; }
+#n15_5 { animation-delay: 6.5s; }
+#n15_6 { animation-delay: 7.5s; }
+
+/* COLUMN 16 */
+#n16_1, #n16_2, #n16_3, #n16_4, #n16_5, #n16_6 { left: 83.3%; }
+#n16_1 { animation-delay: 3s; }
+#n16_2 { animation-delay: 4s; }
+#n16_3 { animation-delay: 5s; }
+#n16_4 { animation-delay: 6s; }
+#n16_5 { animation-delay: 7s; }
+#n16_6 { animation-delay: 8s; }
+
+/* COLUMN 17 */
+#n17_1, #n17_2, #n17_3, #n17_4, #n17_5, #n17_6 { left: 88.85%; }
+#n17_1 { animation-delay: 3.5s; }
+#n17_2 { animation-delay: 4.5s; }
+#n17_3 { animation-delay: 5.5s; }
+#n17_4 { animation-delay: 6.5s; }
+#n17_5 { animation-delay: 7.5s; }
+#n17_6 { animation-delay: 8.5s; }
+
+/* COLUMN 18 */
+#n18_1, #n18_2, #n18_3, #n18_4, #n18_5, #n18_6 { left: 94.4%; }
+#n18_1 { animation-delay: 4s; }
+#n18_2 { animation-delay: 5s; }
+#n18_3 { animation-delay: 6s; }
+#n18_4 { animation-delay: 7s; }
+#n18_5 { animation-delay: 8s; }
+#n18_6 { animation-delay: 9s; }

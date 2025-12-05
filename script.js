@@ -89,5 +89,34 @@ function startOver(){
 
 
 }
+/*
 
+// setting a random position for each background number
+numberImages.forEach(img => {
+    // set a random starting left position
+    resetPosition(img);
 
+    // when the animation restarts (infinite loop)
+    img.addEventListener("animationiteration", () => {
+        resetPosition(img);
+    });
+});
+
+function resetPosition(img) {
+    img.style.left = Math.random() * 100 + "vw";   // random horizontal spot
+}
+
+// setting a random speed for each background number
+numberImages.forEach(img => {
+    resetPosition(img);
+
+    img.addEventListener("animationiteration", () => {
+        resetPosition(img);
+    });
+});
+
+function resetPosition(img) {
+    img.style.left = Math.random() * 100 + "vw";          // random X
+    img.style.animationDuration = (4 + Math.random()*6) + "s"; // 4–10s
+}
+*/
